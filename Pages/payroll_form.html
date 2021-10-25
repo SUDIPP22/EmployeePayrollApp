@@ -23,7 +23,12 @@
       </div>
     </header>
     <div class="form-content">
-      <form class="form" action="#" onsubmit="save(event);return false">
+      <form
+        class="form"
+        action="#"
+        onreset="resetForm()"
+        onsubmit="save(event);return false"
+      >
         <!-- UC 2 -->
         <div class="form-head">Employee Payroll form</div>
         <div class="row-content">
@@ -36,6 +41,7 @@
             placeholder="Your name.."
             required
           />
+          <error-output class="text-error" for="text"></error-output>
         </div>
         <!-- UC 3 -->
         <div class="row-content">
@@ -165,6 +171,7 @@
             max="500000"
             step="100"
             value="400000"
+            required
           />
           <output class="salary-output-text" for="salary">400000</output>
         </div>
@@ -248,7 +255,12 @@
             >Cancel</a
           >
           <div class="submit-reset">
-            <button type="submit" class="button submitButton" id="submitButton">
+            <button
+              type="submit"
+              class="button submitButton"
+              id="submitButton"
+              onclick="submitButton()"
+            >
               Submit
             </button>
             <button type="reset" class="resetButton button" id="resetButton">
