@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/CSS/payroll_form.css" />
     <title>Employee Payroll form</title>
     <script defer src="/JS/payroll_form.js"></script>
+    <script defer src="/JS/employee_payroll_data.js"></script>
   </head>
   <body>
     <!-- UC 1 -->
@@ -238,6 +239,7 @@
               <option value="2016">2016</option>
             </select>
           </div>
+          <error-output class="date-error" for="startDate"></error-output>
         </div>
         <!-- UC 6 -->
         <div class="row-content">
@@ -255,12 +257,7 @@
             >Cancel</a
           >
           <div class="submit-reset">
-            <button
-              type="submit"
-              class="button submitButton"
-              id="submitButton"
-              onclick="submitButton()"
-            >
+            <button type="submit" class="button submitButton" id="submitButton">
               Submit
             </button>
             <button type="reset" class="resetButton button" id="resetButton">

@@ -165,7 +165,16 @@ select {
   margin-right: 30px;
 }
 
+.resetButton {
+  border: none;
+  background-color: #f5f5f5;
+  margin-right: 30px;
+}
+
 .cancelButton {
+  border: none;
+  background-color: #f5f5f5;
+  margin-right: 30px;
   text-decoration: none;
   text-align: center;
 }
@@ -178,6 +187,14 @@ select {
     width: 85%;
     padding: 44px 20px;
   }
+}
+
+error-output {
+  margin-left: 10px;
+  font-size: 14px;
+  font-style: italic;
+  font-family: sans-serif;
+  color: red;
 }
 
 @media only screen and (max-width: 600px) {
@@ -196,6 +213,7 @@ select {
   .submit-reset {
     width: 100%;
     display: flex;
+    flex-grow: 1;
     flex-direction: row-reverse;
     justify-content: space-between;
     margin-bottom: 20px;
